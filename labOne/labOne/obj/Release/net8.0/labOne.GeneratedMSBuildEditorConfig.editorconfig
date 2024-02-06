@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = labOne
 build_property.RootNamespace = labOne
-build_property.ProjectDir = C:\Users\46764\Source\Repos\labOneRazor\labOne\labOne\
+build_property.ProjectDir = C:\Users\46764\source\repos\labOneRazor\labOne\labOne\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\46764\Source\Repos\labOneRazor\labOne\labOne
+build_property.MSBuildProjectDirectory = C:\Users\46764\source\repos\labOneRazor\labOne\labOne
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/46764/source/repos/labOneRazor/labOne/labOne/Pages/About.cshtml]
