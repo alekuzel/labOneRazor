@@ -6,7 +6,19 @@
     <title>@ViewData["Title"] - labOne</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/labOne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/labOne.styles.css" asp-append-version="true" /> 
+
+    <style>
+        .sidenav {
+            background-color: #f9f9fa; /* sidenavs background color */
+            height: calc(100vh - 56px); /* set sidenavs height to 100vh minus height of the header */
+            overflow-y: auto;
+        }
+
+        .active-link {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,25 +33,30 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <!--The side navigation-->
-        <div class="sidenav">
-            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
-                <li class="nav-item">
-                    <a class="navbar-brand" asp-area="" asp-page="/Index">Start</a>
-                </li>
 
-                <li>
-                    <a class="nav-link text-dark" asp-area="" asp-page="/Razor">Razor</a>
-                </li>
-                <li>
-                    <a class="nav-link text-dark" asp-area="" asp-page="/About">Om sidan</a>
-                </li>
-            </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <!-- The side navigation -->
+                <div class="sidenav">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/Index">Start</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" href="/Razor">Razor</a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" href="/About">Om sidan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main role="main" class="pb-3 col-xl">
+                @RenderBody()
+            </main>
+            <div class="col"></div>
         </div>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
     </div>
 
     <footer class="border-top footer text-muted">

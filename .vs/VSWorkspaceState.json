@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\labOne",
+    "\\labOne\\labOne",
+    "\\labOne\\labOne\\Pages",
+    "\\labOne\\labOne\\Pages\\Shared"
   ],
+  "SelectedNode": "\\labOne\\labOne\\Pages\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

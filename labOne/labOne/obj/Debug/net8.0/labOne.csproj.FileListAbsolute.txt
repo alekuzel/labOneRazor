@@ -28,3 +28,4 @@ C:\Users\46764\source\repos\labOneRazor\labOne\labOne\obj\Debug\net8.0\refint\la
 C:\Users\46764\source\repos\labOneRazor\labOne\labOne\obj\Debug\net8.0\labOne.pdb
 C:\Users\46764\source\repos\labOneRazor\labOne\labOne\obj\Debug\net8.0\labOne.genruntimeconfig.cache
 C:\Users\46764\source\repos\labOneRazor\labOne\labOne\obj\Debug\net8.0\ref\labOne.dll
+C:\Users\46764\Source\Repos\labOneRazor\labOne\labOne\obj\Debug\net8.0\labOne.sourcelink.json
