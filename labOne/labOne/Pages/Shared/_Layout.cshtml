@@ -6,30 +6,22 @@
     <title>@ViewData["Title"] - labOne</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/labOne.styles.css" asp-append-version="true" /> 
-
-    <style>
-        .sidenav {
-            background-color: #f9f9fa; /* sidenavs background color */
-            height: calc(100vh - 56px); /* set sidenavs height to 100vh minus height of the header */
-            overflow-y: auto;
-        }
-
-        .active-link {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="~/labOne.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container d-flex justify-content-between">
-                <div>
-                    <a class="navbar-brand" asp-area="" asp-page="/Index">L O G O</a>
+                <div class="logo-container bg-dark p-3 border rounded">
+                    <a class="navbar-brand text-light" asp-area="" asp-page="/Index">L A B_O N E</a>
                 </div>
                 <div class="date-display">
                     <p>Dagens datum är: @DateTime.Now.ToString("yyyy-MM-dd")</p> <!--display date-->
                 </div>
+                <!-- mobile menu button -->
+                <button class="navbar-toggler menu-toggle" type="button" onclick="toggleMenu()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -37,17 +29,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm">
-                <!-- The side navigation -->
-                <div class="sidenav">
+                <!-- mavigation on the left -->
+                <div class="sidenav bg-dark" id="mobSidenav">
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/Index">Start</a>
+                            <a class="nav-link text-light" href="/Index">Start</a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark" href="/Razor">Razor</a>
+                            <a class="nav-link text-light" href="/Razor">Razor</a>
                         </li>
                         <li>
-                            <a class="nav-link text-dark" href="/About">Om sidan</a>
+                            <a class="nav-link text-light" href="/About">Om sidan</a>
                         </li>
                     </ul>
                 </div>
@@ -61,14 +53,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - labOne - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            Av Aleksandra Kuzeleva - Kontakta mig via e-post alku2200@student.miun.se
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

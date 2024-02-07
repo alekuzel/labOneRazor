@@ -20,3 +20,40 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.sidenav {
+   
+    height: calc(100vh - 56px); /* set sidenavs height to 100vh minus height of the header */
+    overflow-y: auto;
+}
+
+.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.sidenav.active {
+    /*show meny os smaller screens when button is clicked*/
+    transform: translateX(0); 
+    width: 100%; 
+}
+/*hide on desktop...*/
+.menu-toggle {
+    display: none; 
+}
+
+@media (max-width: 767px) {
+    /*...show on smaller screens*/
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidenav {
+        /*position when menu button is not clicked*/
+        transform: translateX(-100%);
+        position: fixed;
+        top: 56px;
+        left: 0;
+    }
+}

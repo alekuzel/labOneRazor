@@ -12,3 +12,10 @@
         }
     });
 });
+
+
+
+function toggleMenu() {
+    var sidenav = document.getElementById("mobSidenav");
+    sidenav.classList.toggle('active');
+}
